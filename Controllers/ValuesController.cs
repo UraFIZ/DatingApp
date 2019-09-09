@@ -31,7 +31,6 @@ namespace DatingApp.API.Controllers
             var value = context.Values.FirstOrDefault(x => x.Id == id);
             return Ok(value);
         }
-
         // POST api/values
         [HttpPost]
         public void Post([FromBody] string value)
